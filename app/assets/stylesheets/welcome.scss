@@ -1,42 +1,160 @@
-// Place all the styles related to the welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "materialize/components/color";
+  $primary-color: color("blue", "darken-1") !default;
+  $primary-color-light: false !default;
+  $primary-color-dark: false !default;
+  @if not $primary-color-light {
+    $primary-color-light: lighten($primary-color, 15%);
+  }
+  @if not $primary-color-dark {
+    $primary-color-dark: darken($primary-color, 15%);
+  }
+  $secondary-color: color("blue", "lighten-1") !default;
+  $success-color: color("green", "base") !default;
+  $error-color: color("red", "base") !default;
+  $link-color: color("light-blue", "darken-1") !default;
+
+@import 'materialize';
+
+
 /*--------------------------------------------------------------
-Header styles minus menu
+BASE STYLES
 --------------------------------------------------------------*/
-
-.masthead {
-    background: hsl(0, 0%, 90%);
+body {
+	background: color("blue", "lighten-4");
 }
 
-.site-title {
-    margin: 0 0 1em;
-    padding: 1em 0;
-    font-size: 2em;
-    font-weight: 300;
-    text-align: center;
-    color: black;
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+	max-width: 100%;
+}
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #777;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+/* ---- Layout Containers ---- */
+
+.banner,
+.main-footer {
+	text-align: center;
+}
+
+.banner {
+	width: 100%;
+	padding: 3.2em 0;
+	margin-bottom: 48px;
+  background-size: 100% 100%;
+}
+
+.col {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+
+.main-footer {
+	background: color("grey", "darken-2");
+	padding: 2em 0;
+	margin-top: 30px;
+ 
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+	.main-header,
+	.row {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.tagline {
+		font-size: 2.2em;
+	}
+}
+
+@media (min-width: 1025px) {
+	.main-header,
+	.row {
+		width: 80%;
+		max-width: 1150px;
+	}
+}
+
+
+@media (min-width: 769px) {
+
+	.main-header,
+	.main-nav,
+	.row {
+		display: flex;
+	}
+
+	.main-header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.col {
+		flex: 1 50%;
+	}
+
+	.row {
+		flex-wrap: wrap;
+	}
+
+
+	.secondary {
+		order: -1;
+	}
+
+}
+
+@media (min-width: 1025px) {
+
+	.main-header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.col {
+		flex-basis: 0;
+	}
+
+	.primary {
+		flex-grow: 1.4;
+	}
+
 }
 
 
 
-@media screen and (min-width: 44.44em) {
-    .site-title {
-        font-size: 2em;
-    }
-}
-    
-@media screen and (min-width: 50em) {
-    .site-title {
-        font-size: 2.5em;
-    }
-}
-
-.site-title a {
-    color: hsl(5, 45%, 95%);
-    text-decoration: none;
-}
-
-.site-title a:hover {
-    text-decoration: underline;
-}

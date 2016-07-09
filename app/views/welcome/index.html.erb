@@ -1,62 +1,96 @@
+<div class="navbar-fixed">
+<nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo center">Hacker Beach </a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Surf</a></li>
+        <li><a href="#">Code</a></li>
+        <li><a href="#">Stay</a></li>
+<a class="waves-effect waves-light btn">Login</a>      
+</ul>
+      <ul class="side-nav" id="mobile-demo">
+          
+        <li><a href="#">Surf</a></li>
+        <li><a href="#">Code</a></li>
+        <li><a href="#">Stay</a></li>
+        <a class="waves-effect waves-light btn">Login</a><li><a href="#"></a></li>
+      </ul>
+    </div>
+  </nav>
+  </div>
 
-     <header class="masthead clear">
-        <div class="centered">
+	<div class="banner" style="background-image: url(<%= asset_path 'svg/beach.svg' %>);" >
+	 <%= link_to image_tag("screen") %> 
+		<h1 class="headline">Remotely Tropical</h1>
+		<span class="tagline">Build cool things. Meet awesome people.</span>
+	</div><!--/.banner-->
+	
+	<div class="row">		
+		<div class="primary col">
+			<h2>Cabins by the beach</h2>
+			<div class="card">
+            <div class="card-image">
+              <%= image_tag("text") %>
+              
+            </div>
+            <div class="card-content">
+              <p>Book now for winter cabins </p>
+            </div>
+          </div>
+          
+          
+		
+		</div><!--/.primary-->
+		
+		<div class="secondary col">
+			<h2>Welcome!</h2>
+			<p>Everything on this island is worth waiting in line for.</p>
+			<p>We optimise your environment, all cabins have super fast internet and comfortable workstations.
+			<div class="card white" style="border-radius 5px">
+      <div class="card-action">
+      <a href="#">Read our Blog</a>
+      </div>
             
-            <div class="site-branding">
-                <h1 class="site-title">Hacker Beach
-            </div><!-- .site-title -->
-        </div><!-- .centered -->
-    </header><!-- .masthead -->
-    
-     <main class="main-area">
-    <div class="centered">
-    <section class="cards">
-        
-    <div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-    <img class="activator" src="images/office.jpg">
-    </div>
-    <div class="card-content">
-    <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-    <p><a href="#">This is a link</a></p>
-    </div>
-    <div class="card-reveal">
-    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-    <p>Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-    </div>
-    
-     <div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-    <img class="activator" src="images/office.jpg">
-    </div>
-    <div class="card-content">
-    <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-    <p><a href="#">This is a link</a></p>
-    </div>
-    <div class="card-reveal">
-    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-    <p>Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-    </div>
-    
-     <div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-    <img class="activator" src="images/office.jpg">
-    </div>
-    <div class="card-content">
-    <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-    <p><a href="#">This is a link</a></p>
-    </div>
-    <div class="card-reveal">
-    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-    <p>Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-    </div>
-  
-   
-  
-  
-     </section><!-- .cards -->
-     </div><!-- .centered -->
-     </main>
+          </div>
+		</div><!--/.secondary-->
+		
+		<div class="tertiary col">
+			<h2>Hosted by </h2>
+		 <div class="chip">
+    <%= link_to image_tag("jrbarakat") %> 
+    JB - Senior Full Stack 
+  </div>
+   <div class="chip">
+    <%= link_to image_tag("cb") %>
+    CB - General Manager
+  </div>
+   <div class="chip">
+     <%= link_to image_tag("ak") %>
+    AK - Yoga Instructor
+  </div>
+   <div class="chip">
+     <%= link_to image_tag("fb") %>
+    FB - Event Planner
+  </div>
+   <div class="chip">
+     <%= link_to image_tag("tyson") %>
+    KF - The Chef
+  </div>
+		</div><!--/.tertiary-->	
+	</div>
+	
+	<footer class="main-footer">
+		<span>&copy;2016 Hackers  Beach Saint Lucia.</span>
+	</footer>
+    <script>
+     $(document).ready(function () {
+   $('.button-collapse').sideNav({
+      menuWidth: 800, // Default is 240
+      edge: 'right', // Choose the horizontal origin
+      closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    }
+  );
+});
+
+</script>

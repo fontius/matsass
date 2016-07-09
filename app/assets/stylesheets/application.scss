@@ -1,71 +1,25 @@
-@import "materialize/components/color";
-$primary-color: color("blue", "lighten-2") !default;
-@import 'materialize';
-
-/*--------------------------------------------------------------
-Header styles minus menu
---------------------------------------------------------------*/
-
-.masthead {
-    background: hsl(0, 0%, 90%);
-}
-
-.site-title {
-    margin: 0 0 1em;
-    padding: 1em 0;
-    font-size: 2em;
-    font-weight: 300;
-    text-align: center;
-    color: black;
-}
 
 
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ 
+ *= require_self
+ *= require welcome
+ *= require_tree .
+ 
+ 
 
-@media screen and (min-width: 44.44em) {
-    .site-title {
-        font-size: 2em;
-    }
-}
-    
-@media screen and (min-width: 50em) {
-    .site-title {
-        font-size: 2.5em;
-    }
-}
+ 
+ 
+ */
 
-.site-title a {
-    color: hsl(5, 45%, 95%);
-    text-decoration: none;
-}
-
-.site-title a:hover {
-    text-decoration: underline;
-}
-
-/* Flexbox stuff */
-
-@media screen and (min-width: 40em) {
-    .cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-top: -1em;
-    }
-
-    .card {
-        display: flex;
-        flex: 0 1 calc(50% - .5em);
-        margin-bottom: 1em;
-    }
-}
-
-@media screen and (min-width: 60em) {
-    .cards {
-        margin-top: inherit;
-    }
-    
-    .card {
-        flex: 0 1 calc(33% - 1em);
-        margin-bottom: 2em;
-    }
-}

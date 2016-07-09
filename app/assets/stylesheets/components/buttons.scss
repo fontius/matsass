@@ -1,0 +1,16 @@
+// Raised Button
+.btn {
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: .5px;
+  transition: .2s ease-out;
+  cursor: pointer;
+  border-radius: 5px;
+
+
+  &:hover {
+    background-color: success-color;
+    border-radius: 5px;
+    
+  }
+}
