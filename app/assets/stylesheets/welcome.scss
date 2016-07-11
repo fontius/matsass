@@ -20,46 +20,16 @@
 BASE STYLES
 --------------------------------------------------------------*/
 body {
-	background: color("blue", "lighten-4");
+	background: color("blue", "darken-1");
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
 
-img {
-	max-width: 100%;
-}
-/* typography */
-
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
-}
-
-h1 {
-  font-size: 3em;
-  letter-spacing: -2px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-h2 {
-  font-size: 1.5em;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
-  text-align: center;
-  font-weight: normal;
-  color: #777;
-}
-
-p {
-  font-size: 1.1em;
-  line-height: 1.7em;
-}
 
 /* ---- Layout Containers ---- */
+.brand-logo {
+	width: 260px;
+	height: 70px;
+}
 
 .banner,
 .main-footer {
@@ -67,6 +37,12 @@ p {
 }
 
 .banner {
+	width: 100%;
+	padding: 3.2em 0;
+  background-size: 100% 100%;
+}
+
+.main {
 	width: 100%;
 	padding: 3.2em 0;
 	margin-bottom: 48px;
@@ -80,30 +56,33 @@ p {
 
 
 .main-footer {
-	background: color("blue", "darken-2");
+	background: color("blue", "lighten-1");
 	padding: 2em 0;
 	margin-top: 30px;
  
 }
+.row 	{
 
+width: 100%;
+  background-size: 100% 100%;
+}
 
 /* ================================= 
   Media Queries
 ==================================== */
 
 @media (min-width: 769px) {
-	.main-header,
+
 	.row {
 		width: 90%;
 		margin: 0 auto;
 	}
 	.tagline {
-		font-size: 2.2em;
+		font-size: 2.8em;
 	}
 }
 
 @media (min-width: 1025px) {
-	.main-header,
 	.row {
 		width: 80%;
 		max-width: 1150px;
@@ -113,16 +92,11 @@ p {
 
 @media (min-width: 769px) {
 
-	.main-header,
-	.main-nav,
 	.row {
 		display: flex;
 	}
 
-	.main-header {
-		flex-direction: column;
-		align-items: center;
-	}
+
 
 	.col {
 		flex: 1 50%;
@@ -141,11 +115,7 @@ p {
 
 @media (min-width: 1025px) {
 
-	.main-header {
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
+	
 	.col {
 		flex-basis: 0;
 	}
