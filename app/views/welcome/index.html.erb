@@ -45,9 +45,54 @@
 			<h3>Welcome!</h3>
 		
 		<div class="card z-depth-1">
-            <div class="card-image waves-effect waves-block waves-light">
+            <div class="card-image waves-effect waves-block waves-green">
               <%= image_tag("text.jpg") %>
             </div>
+
+          </div>
+		</div><!--/.secondary-->
+
+		<div class="tertiary col">
+			<h3>Hosted by </h3>
+		 <div class="chip z-depth-2 waves-effect waves-block waves-green">
+    <%= link_to image_tag("jrbarakat.jpg") %>
+    Senior Full Stack
+  </div>
+   <div class="chip z-depth-2">
+    <%= link_to image_tag("cb.jpg") %>
+   General Manager
+  </div>
+   <div class="chip z-depth-2">
+     <%= link_to image_tag("ak.jpg") %>
+     Yoga Instructor
+  </div>
+   <div class="chip z-depth-2">
+     <%= link_to image_tag("fb.jpg") %>
+     Event Planner
+  </div>
+  
+		</div><!--/.tertiary-->
+	</div>
+	
+	 <div class="main" >
+	<div class="row" >
+		<div class="primary col">
+			<div class="card z-depth-1">
+            <div class="card-image waves-effect waves-block waves-green">
+              <%= image_tag("pitonpool.jpg") %>
+            </div>
+           
+          </div>
+		</div><!--/.primary-->
+
+		<div class="secondary col">
+		
+		<div class="card z-depth-1">
+            <div class="card-image waves-effect waves-block waves-green">
+              <%= image_tag("jazz.jpg") %>
+            </div>
+            
+            
 <%= form_tag charges_path do %>
   <article>
     <% if flash[:error].present? %>
@@ -70,31 +115,26 @@
 		</div><!--/.secondary-->
 
 		<div class="tertiary col">
-			<h3>Hosted by </h3>
-		 <div class="chip z-depth-2 waves-effect waves-block waves-light">
-    <%= link_to image_tag("jrbarakat.jpg") %>
-    Senior Full Stack
-  </div>
-   <div class="chip z-depth-2">
-    <%= link_to image_tag("cb.jpg") %>
-   General Manager
-  </div>
-   <div class="chip z-depth-2">
-     <%= link_to image_tag("ak.jpg") %>
-     Yoga Instructor
-  </div>
-   <div class="chip z-depth-2">
-     <%= link_to image_tag("fb.jpg") %>
-     Event Planner
-  </div>
-  
+		    
+	<ul class="collapsible z-depth-2" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">filter_drama</i>Winter Deals</div>
+      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">place</i>Fall Savings</div>
+      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>More info</div>
+      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+    </li>
+  </ul>
+        
+          
 		</div><!--/.tertiary-->
 	</div>
-	
-	
- 
- 
-	</div><!--/.main-->
+ </div><!--/.main-->
 
 
 <div class="media">
@@ -108,29 +148,6 @@ scrolling="no" class="wistia_playlist" name="wistia_playlist" allowfullscreen mo
 webkitallowfullscreen oallowfullscreen msallowfullscreen width="640" height="360"></iframe>      
 </div>
 </div>
-
-<%= form_tag charges_path do %>
-  <article>
-    <% if flash[:error].present? %>
-      <div id="error_explanation">
-        <p><%= flash[:error] %></p>
-      </div>
-    <% end %>
-    <label class="amount">
-      <span>Amount: $5.00</span>
-    </label>
-  </article>
-
-  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-          data-description="A month's subscription"
-          data-amount="500"
-          data-locale="auto"></script>
-<% end %>
-
-
-
-
 
 	<footer class="main-footer">
 		<span>&copy;2016 Hackers  Beach Saint Lucia.</span>
