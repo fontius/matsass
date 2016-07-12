@@ -1,0 +1,5 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1104 905">  preserveAspectRatio="none"
+    <defs><path id="a" d="M1 0h1104v905H1z"/></defs><clipPath id="b"><use xlink:href="#a" overflow="visible"/>
+    </clipPath><path clip-path="url(#b)" fill="none" d="M1103 96.2l1.2.2v111.7l.8.2V0h-2"/><path clip-path="url(#b)" 
+    fill="#6EB4E4" d="M288 199.1C384.5 76.8 436.2 46 554 128.3c19.9 13.9 38.6 29.7 56.4 46.8L937.3 32.9 477.8-78H0v518.4l195.1-84.8c28.4-48.8 49.6-101.6 92.9-156.5z"/><path clip-path="url(#b)" fill="#438ECC" d="M343.7 246.3L0 341.5v98.9c63.4-30.8 133.7-52.4 196.6-83.6 68.5-34 111.1-71.1 147.1-110.5z"/><path clip-path="url(#b)" fill="#C0E0F6" d="M280.8 90.3l823.4 237.8V144.9l-1.7-.3L203.2-13H-75L280.8 90.3"/><path clip-path="url(#b)" fill="#FBD6B3" d="M1105 0H20l1085 248.2"/></svg>
