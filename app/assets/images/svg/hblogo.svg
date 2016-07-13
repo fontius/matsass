@@ -1,7 +1,7 @@
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 44" enable-background="new 0 0 320 44">
 <filter width="140%" height="130%" id="a" filterUnits="objectBoundingBox" x="-15%" y="-15%">
-    <feGaussianBlur stdDeviation="6" result="blur" in="SourceAlpha"/>
+    <feGaussianBlur stdDeviation="3" result="blur" in="SourceAlpha"/>
     <feOffset result="offsetBlurredAlpha" in="blur" dy="8" dx="8"/>
     <feMerge><feMergeNode in="offsetBlurredAlpha"/><feMergeNode in="SourceGraphic"/>
     </feMerge></filter><g filter="url(#a)" fill="#FFF" stroke="#5590CC">

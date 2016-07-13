@@ -25,8 +25,8 @@ body {
 }
 /* ---- Layout Containers ---- */
 .brand-logo {
-	width: 240px;
-	height: 70px;
+	width: 250px;
+	height: 90px;
 }
 
 .side-nav {
@@ -59,7 +59,7 @@ height:500px;
 .main {
 	width: 100%;
 	padding: 3.2em 0;
-	margin-bottom: 48px;
+	margin-bottom: 0px;
 }
 
 .col {
@@ -84,7 +84,7 @@ height:500px;
 @media (min-width: 769px) {
 
 	.row {
-		width: 90%;
+		width: 97%;
 		margin: 0 auto;
 	}
 	.tagline {
