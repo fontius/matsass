@@ -2,18 +2,16 @@
 <nav>
 <div class="nav-wrapper">
 <a href="#" class="brand-logo center <%= link_to image_tag("svg/hblogo.svg") %> </a>
-<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+<a href="#" data-activates="mobile-demo" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-          <li><%= link_to "Surf", '#' %></li>
-          <li><%= link_to "Code", '#' %></li>
-          <li><%= link_to "Stay", '#' %></li>
+        
         <a class="waves-effect waves-light btn <%= link_to "Login", '#' %> "></a>
         </ul>
         <ul class="side-nav" id="mobile-demo">
           <li><%= link_to "Surf", '#' %></li>
           <li><%= link_to "Code", '#' %></li>
           <li><%= link_to "Stay", '#' %></li>
-          <a class="waves-effect waves-light btn">Login</a>
+          
          </ul>
        </div>
        </nav>
@@ -21,16 +19,16 @@
 
 	    <div class="banner" style="background-image: url(<%= asset_path 'svg/beach.svg' %>);" >
 	    <%= link_to image_tag("screen.png") %>
-		<h2 class="headline">Remotely Tropical</h2>
-		<span class="tagline">Build cool things. Meet awesome people.</span>
+		<h1>Remotely Tropical</h1>
+		<h2 span> Build cool things. Meet awesome people.</span></h2>
      	</div><!--/.banner-->
      	
 	    <div class="mainwrapper" style="background-image: url(<%= asset_path 'svg/main.svg' %>);" >
         <div class="main" >
 	    <div class="row" >
 		<div class="primary col">
-		<h3>Beach Cabins</h3>
-		<div class="card z-depth-1">
+		<h3>Cabins</h3>
+		<div class="card z-depth-2">
         <div class="card-image waves-effect waves-block waves-light">
         <%= image_tag("cabin.jpg") %>
         </div>
@@ -38,18 +36,18 @@
 		</div><!--/.primary-->
 
 		<div class="secondary col">
-		<h3>Welcome!</h3>
+		<h3>Sa ka fete</h3>
 		
-		<div class="card z-depth-1">
+		<div class="card z-depth-2">
         <div class="card-image waves-effect waves-block waves-green">
-        <%= image_tag("losbason.jpg") %>
+        <%= image_tag("pitonpool.jpg") %>
         </div>
         </div>
 		</div><!--/.secondary-->
 
 		<div class="tertiary col">
 		<h3>Hosted by </h3>
-		<div class="chip z-depth-2 waves-effect waves-block waves-green">
+		<div class="chip z-depth-2 ">
         <%= link_to image_tag("jrbarakat.jpg") %>
         Full Stack Devs
         </div>
@@ -88,25 +86,21 @@
 		</div><!--/.secondary-->
 
 		<div class="tertiary col">
-	    <ul class="collapsible z-depth-2" data-collapsible="accordion"> <li>
-        <div class="collapsible-header"><i class="material-icons">filter_drama</i>Winter Deals</div>
-        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-        </li>
-        <li>
-        <div class="collapsible-header"><i class="material-icons">place</i>Fall Savings</div>
-        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-        </li>
-        <li>
-        <div class="collapsible-header"><i class="material-icons">whatshot</i>More info</div>
-        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-        </li>
-        </ul>
+	    <div class="card-panel" style="background-color: rgba(13, 12, 12, 0.88);">
+          <span class="white-text">
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively. I am similar to what is called a 
+          panel in other frameworks.
+          </p>
+       </span>
+        </div>
 		</div><!--/.tertiary-->
 	    </div>
         </div><!--/.main-->
         </div>
 
       <div class="container z-depth-2">
+      
       <div class="video-container">
       <iframe src="//fast.wistia.net/embed/playlists/it21i6d0f6?media_0_0%5BautoPlay%5D=false&media_0_0%5BcontrolsVisibleOnLoad%5D=false&theme=
       tab&version=v1&videoOptions%5BautoPlay%5D=true&videoOptions%5BplayButton%5D=
@@ -117,19 +111,21 @@
       </div>
       </div>
 
-      <div class="fixed-action-btn grey-darken-4" style="bottom: 45px; right: 24px;">
-      <a class="btn-floating btn-large ">
-      <i class="large material-icons">translate</i></a>
+      <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+      <a class="btn-floating black btn-large ">
+      <i class="large material-icons">visibility</i></a>
      <ul>
       <li><a class="btn-floating red"><i class="medium material-icons">visibility</i></a></li>
-      <li><a class="btn-floating yellow darken-1"><i class="medium material-icons">my_location</i></a></li>
+      <li><a class="btn-floating yellow darken-1"><i class="medium material-icons">visibility</i></a></li>
       <li><a class="btn-floating green"><i class="medium material-icons">visibility</i></a></li>
       
      </ul>
      </div>
 
 	<footer class="main-footer">
-	<span>&copy;2016 Hackers  Beach Saint Lucia.</span
+	<span>&copy;2016 Hackers Beach Saint Lucia.</span>
+	
+	<div class="stripe"></a>
 	
 	<%= form_tag charges_path do %>
 	
@@ -160,3 +156,7 @@
      );
      });
     <% end %>
+    
+        <%= javascript_tag do %>
+        
+        <% end %>

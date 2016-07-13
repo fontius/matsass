@@ -1,0 +1,80 @@
+
+a {
+  text-decoration: none;
+}
+
+html{
+  line-height: 1;
+
+  @media only screen and (min-width: 769px) {
+    font-size: 20px;
+        p {
+        font-size: 1.5em;
+        line-height: 1.25em;
+}
+  }
+
+  @media only screen and (min-width: 1025px) {
+    font-size: 17.5px;
+    p {
+        font-size: 1.2em;
+        line-height: 1.25em;
+}
+  }
+
+  @media only screen and (min-width: 1150px) {
+    font-size: 18px;
+ p {
+font-size: 1.2em;
+line-height: 1.25em;
+
+}
+  
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 600;
+    color: #29232D;
+    letter-spacing: 1px;
+    padding: 5px 5px 0 5px;
+}
+
+h2 {
+    font-size: 3.5em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 5px 5px 0 5px;
+
+
+
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 5px 5px 0 5px;
+
+
+
+}
+
+.nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.8em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+
+
+
+}
